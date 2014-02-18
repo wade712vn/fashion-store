@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using Autofac;
 
 namespace FashionStore.Core.Infrastructure
@@ -29,6 +30,21 @@ namespace FashionStore.Core.Infrastructure
             {
                 return _containerManager;
             }
+        }
+
+        public T Resolve<T>() where T : class
+        {
+            return ContainerManager.Resolve<T>();
+        }
+
+        public object Resolve(Type type)
+        {
+            return ContainerManager.Resolve(type);
+        }
+
+        public T[] ResolveAll<T>()
+        {
+            return ContainerManager.ResolveAll<T>();
         }
     }
 }

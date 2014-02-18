@@ -11,12 +11,13 @@ namespace FashionStore.Web.Ioc
     {
         public object GetService(Type serviceType)
         {
-            throw new NotImplementedException();
+            return EngineContext.Current.ContainerManager.Resolve(serviceType);
         }
 
         public IEnumerable<object> GetServices(Type serviceType)
         {
-            throw new NotImplementedException();
+            var type = typeof(IEnumerable<>).MakeGenericType(serviceType);
+            return (IEnumerable<object>)EngineContext.Current.Resolve(type);
         }
     }
 }
