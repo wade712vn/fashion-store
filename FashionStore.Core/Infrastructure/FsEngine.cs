@@ -9,19 +9,24 @@ using Autofac;
 
 namespace FashionStore.Core.Infrastructure
 {
-    public class FsEngine
+    public class FsEngine : IEngine
     {
         private ContainerManager _containerManager;
 
-        public FsEngine()
+        public FsEngine() : this(new ContainerConfigurer())
         {
-            InitializeContainer();
         }
 
-        private void InitializeContainer()
+        public FsEngine(ContainerConfigurer configurer)
+        {
+            InitializeContainer(configurer);
+        }
+
+        private void InitializeContainer(ContainerConfigurer configurer)
         {
             var builder = new ContainerBuilder();
             _containerManager = new ContainerManager(builder.Build());
+            configurer.Configure(this, _containerManager);
         }
 
         public ContainerManager ContainerManager

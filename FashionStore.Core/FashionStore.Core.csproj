@@ -57,12 +57,18 @@
     <Compile Include="Data\IDbContext.cs" />
     <Compile Include="Data\IRepository.cs" />
     <Compile Include="Domain\Catalog\Product.cs" />
+    <Compile Include="Infrastructure\AppDomainTypeFinder.cs" />
     <Compile Include="Infrastructure\AutofacRequestLifetimeHttpModule.cs" />
     <Compile Include="Infrastructure\ComponentLifeStyle.cs" />
+    <Compile Include="Infrastructure\ContainerConfigurer.cs" />
     <Compile Include="Infrastructure\ContainerManager.cs" />
     <Compile Include="Infrastructure\EngineContext.cs" />
     <Compile Include="Infrastructure\FsEngine.cs" />
+    <Compile Include="Infrastructure\IDenpendencyRegistrar.cs" />
+    <Compile Include="Infrastructure\IEngine.cs" />
+    <Compile Include="Infrastructure\ITypeFinder.cs" />
     <Compile Include="Infrastructure\Singleton.cs" />
+    <Compile Include="Infrastructure\WebAppTypeFinder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
