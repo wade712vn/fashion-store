@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using Autofac;
+using FashionStore.Core.Domain.Catalog;
 
 namespace FashionStore.Core.Infrastructure
 {
@@ -21,6 +22,7 @@ namespace FashionStore.Core.Infrastructure
         private void InitializeContainer()
         {
             var builder = new ContainerBuilder();
+            
             _containerManager = new ContainerManager(builder.Build());
         }
 
