@@ -8,25 +8,25 @@ namespace FashionStore.Core.Infrastructure
 {
     public class EngineContext
     {
-        public static FsEngine Initialize(bool forceRecreate)
+        public static IEngine Initialize(bool forceRecreate)
         {
-            if (Singleton<FsEngine>.Instance == null)
+            if (Singleton<IEngine>.Instance == null)
             {
-                Singleton<FsEngine>.Instance = new FsEngine();
+                Singleton<IEngine>.Instance = new FsEngine();
             }
 
-            return Singleton<FsEngine>.Instance;
+            return Singleton<IEngine>.Instance;
         }
 
-        public static FsEngine Current
+        public static IEngine Current
         {
             get
             {
-                if (Singleton<FsEngine>.Instance == null)
+                if (Singleton<IEngine>.Instance == null)
                 {
                     Initialize(false);
                 }
-                return Singleton<FsEngine>.Instance;
+                return Singleton<IEngine>.Instance;
             }
         }
     }
