@@ -59,6 +59,8 @@
     <Compile Include="Caching\MemoryCacheManager.cs" />
     <Compile Include="Data\IDbContext.cs" />
     <Compile Include="Data\IRepository.cs" />
+    <Compile Include="Domain\Catalog\Category.cs" />
+    <Compile Include="Domain\Catalog\Manufacturer.cs" />
     <Compile Include="Domain\Catalog\Product.cs" />
     <Compile Include="Infrastructure\AppDomainTypeFinder.cs" />
     <Compile Include="Infrastructure\AutofacRequestLifetimeHttpModule.cs" />
