@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionStore.Core", "Fashio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionStore.Services", "FashionStore.Services\FashionStore.Services.csproj", "{405ABF28-13C1-44FE-A16C-BC45DA62F76F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionStore.Web.Framework", "FashionStore.Web.Framework\FashionStore.Web.Framework.csproj", "{2F180590-C2A3-4653-BD31-4C089C9880F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{405ABF28-13C1-44FE-A16C-BC45DA62F76F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{405ABF28-13C1-44FE-A16C-BC45DA62F76F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{405ABF28-13C1-44FE-A16C-BC45DA62F76F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F180590-C2A3-4653-BD31-4C089C9880F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F180590-C2A3-4653-BD31-4C089C9880F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F180590-C2A3-4653-BD31-4C089C9880F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F180590-C2A3-4653-BD31-4C089C9880F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

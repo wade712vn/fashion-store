@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0B7CA5E0-0B04-4A6B-B320-6645B133840F}</ProjectGuid>
+    <ProjectGuid>{2F180590-C2A3-4653-BD31-4C089C9880F9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FashionStore.Core</RootNamespace>
-    <AssemblyName>FashionStore.Core</AssemblyName>
+    <RootNamespace>FashionStore.Web.Framework</RootNamespace>
+    <AssemblyName>FashionStore.Web.Framework</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,23 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac">
-      <HintPath>..\packages\Autofac.3.3.0\lib\net40\Autofac.dll</HintPath>
-    </Reference>
-    <Reference Include="Autofac.Integration.Mvc">
-      <HintPath>..\packages\Autofac.Mvc5.3.2.0\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Caching" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.1.1\lib\net45\System.Web.Mvc.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,24 +39,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseEntity.cs" />
-    <Compile Include="Caching\ICacheManager.cs" />
-    <Compile Include="Caching\MemoryCacheManager.cs" />
-    <Compile Include="Data\IDbContext.cs" />
-    <Compile Include="Data\IRepository.cs" />
-    <Compile Include="Domain\Catalog\Product.cs" />
-    <Compile Include="Infrastructure\AppDomainTypeFinder.cs" />
-    <Compile Include="Infrastructure\AutofacRequestLifetimeHttpModule.cs" />
-    <Compile Include="Infrastructure\ComponentLifeStyle.cs" />
-    <Compile Include="Infrastructure\ContainerConfigurer.cs" />
-    <Compile Include="Infrastructure\ContainerManager.cs" />
-    <Compile Include="Infrastructure\EngineContext.cs" />
-    <Compile Include="Infrastructure\FsEngine.cs" />
-    <Compile Include="Infrastructure\IDenpendencyRegistrar.cs" />
-    <Compile Include="Infrastructure\IEngine.cs" />
-    <Compile Include="Infrastructure\ITypeFinder.cs" />
-    <Compile Include="Infrastructure\Singleton.cs" />
-    <Compile Include="Infrastructure\WebAppTypeFinder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
