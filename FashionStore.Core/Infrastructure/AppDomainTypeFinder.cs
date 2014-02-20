@@ -199,7 +199,7 @@ namespace FashionStore.Core.Infrastructure
             return FindAssembliesWithAttribute<T>(assemblies);
         }
 
-        /// <summary>Gets tne assemblies related to the current implementation.</summary>
+        /// <summary>Gets the assemblies related to the current implementation.</summary>
         /// <returns>A list of assemblies that should be loaded by the Fs factory.</returns>
         public virtual IList<Assembly> GetAssemblies()
         {
