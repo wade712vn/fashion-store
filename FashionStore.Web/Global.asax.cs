@@ -7,6 +7,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using Autofac;
 using Autofac.Integration.Mvc;
+using FashionStore.Core.Infrastructure;
 using FashionStore.Web.Ioc;
 
 namespace FashionStore.Web
@@ -19,6 +20,8 @@ namespace FashionStore.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            EngineContext.Initialize(false);
 
             DependencyResolver.SetResolver(new FsDependencyResolver());
         }
