@@ -11,7 +11,7 @@ namespace FashionStore.Web.Ioc
     {
         public object GetService(Type serviceType)
         {
-            return EngineContext.Current.ContainerManager.Resolve(serviceType);
+            return EngineContext.Current.ContainerManager.ResolveOptional(serviceType);
         }
 
         public IEnumerable<object> GetServices(Type serviceType)

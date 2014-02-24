@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionStore.Services", "Fa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionStore.Web.Framework", "FashionStore.Web.Framework\FashionStore.Web.Framework.csproj", "{2F180590-C2A3-4653-BD31-4C089C9880F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FashionStore.Admin", "FashionStore.Web\Administration\FashionStore.Admin.csproj", "{2271D82B-4DEA-4B71-B214-90E3C879138F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2F180590-C2A3-4653-BD31-4C089C9880F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F180590-C2A3-4653-BD31-4C089C9880F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F180590-C2A3-4653-BD31-4C089C9880F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2271D82B-4DEA-4B71-B214-90E3C879138F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2271D82B-4DEA-4B71-B214-90E3C879138F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2271D82B-4DEA-4B71-B214-90E3C879138F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2271D82B-4DEA-4B71-B214-90E3C879138F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
